@@ -99,22 +99,39 @@ summary(df)
 which()
 ```
 
-### lenghth and dimensions 
+### length and dimensions 
 ```
 length(df$column)
 dim(df)
 ```
 
+### R libraries pathname
+```
+.libPaths()		
+```
 
-.libPaths()		# library pathname
-.Library	# library pathname
+### number of columns and rows in a dataframe
+```
 ncol(df)
 nrow(df)
-dim(df)
-names(df)
+```
+
+names(list)
+
+### column names
+```
 colnames(df)
+```
+
+### row names
+```
 rownames(df)
+```
+
+### type of data
 class(df)
+
+### get duplicates
 duplicated(df$col)
 
 ### Basic stattistic function
@@ -127,23 +144,35 @@ sd(vec)
 ```
 ### For Plotting
 #### histogram
+```
 hist(vec) 
+```
 #### density distribution
-plot(density(df$col, na.rm=TRUE))				
-
+```
+plot(density(df$col, na.rm=TRUE))
 par(ask=TRUE) #One figure in frame
 par(mfrow=c(2,3)) # 6 figures in one frame 2 rows 3 columns
+```
 
 #### boxplot
+```
 boxplot()
+```
 
 #### barplot
+```
 barplot()
-
+```
 ### Session info
-
+```
 sessionInfo()
+```
 
-#Want to write your own functions? Learn here
+#### training datasets 
+```
+library(mtcars)
+library(iris)
+```
+#### Want to write your own functions? Learn here
 https://www.dataquest.io/blog/write-functions-in-r/
 
