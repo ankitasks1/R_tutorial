@@ -1,45 +1,17 @@
 #  R_tutorial
 
-## setting directory where you want to work
+## Setting directory where you want to work
 ```
 setwd("directory")
 eg.
 setwd("/Archive2/home/")
 ```
-## getting directory where you are working
+## Getting directory where you are working
 ```
 getwd()
 ```
 
-## Input
-### Assignment
-```
-vec <- c(3,5,7,9)
-```
-
-## Reading file
-```
-dt <- read.table("data.txt", header =T) 
-dt <- read.csv("data.csv", header=T)
-```
-
-or
-
-```
-library(data.table)
-dt <- fread("data.txt", header =T)
-```
-
-## list
-```
-ls()
-```
-
-## remove an object
-```
-rm()
-```
-## install packages
+## Install packages
 ##### CRAN
 ```
 install.packages("package")
@@ -62,16 +34,64 @@ library(package)
 ```
 help(package=package)
 ```
+
+## Input
+### Assignment
+```
+vec <- c(3,5,7,9)
+```
+
+## Reading file
+```
+dt <- read.table("data.txt", header =T) 
+dt <- read.csv("data.csv", header=T)
+```
+
+or
+
+```
+library(data.table)
+dt <- fread("data.txt", header =T)
+```
+
+## Listing environment
+```
+ls()
+```
+
+## Remove an object
+```
+rm(df)
+```
+
 ### Attach Set of R Objects to Search Path
 ```
 attach(df)
 ```
 
-str(df) #Identify structure
-head(df,3) # Show the head 3 lines
-tail(df,3) # Show the last 3 lines
-round()
+### Identify data structure
+```
+str(df)
+```
+### Show the top lines
+```
+head(df,3) 
+```
+
+### Show the last lines
+```
+tail(df,3) 
+```
+
+### Rounding off
+```
+round(2.9010, 2)
+```
+
+### Summarize dataframe
+```
 summary(df)
+```
 length(df)
 hist() #histogram
 q() #quit n close R session			
