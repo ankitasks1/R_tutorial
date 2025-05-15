@@ -5,7 +5,7 @@ R is a programming language and software environment for statistical computing a
 
 #### String (Character Vector) – Text data
 ```
-my_string <- "Hello, R!"  # character vector of length 1
+my_string <- "Hello Team"  # character vector of length 1
 ```
 
 ##### Vector – Basic 1D structure (same type)
