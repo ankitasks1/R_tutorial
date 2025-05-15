@@ -19,8 +19,8 @@ vec <- c(3,5,7,9)
 
 ## Reading file
 ```
-dt <- read.table("data.txt", header =T)
-dt <- read.csv("data.csv", header=T)
+dt <- read.table("data.txt", header =T) # read.table part of base function R: utils
+dt <- read.csv("data.csv", header=T) # read.csv part of base function R: utils
 ```
 
 or
@@ -35,11 +35,11 @@ dt <- fread("data.txt", header =T)
 ls()
 ```
 
-## remove a object
+## remove an object
+```
 rm()
-
-utils::read.table()
-utils::read.csv()		
+```
+	
 plot(density(df$col, na.rm=TRUE))				
 install.packages("package")				
 library(package)
