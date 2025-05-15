@@ -1,7 +1,8 @@
 #  R_tutorial
-## Some Theory
+## First Some Theory
+R is a programming language and software environment for statistical computing and graphics. It's used for a wide range of tasks, including data analysis, visualization, statistical modeling, and machine learning. R is also known for its extensibility and flexibility. 
 
-## Object types in R
+### Object types in R
 
 #### String (Character Vector) – Text data
 ```
