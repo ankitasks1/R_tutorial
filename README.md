@@ -229,6 +229,8 @@ barplot()
 #### plotting with ggplot2
 ```
 ggplot(data=iris, aes(x=Species, y=Sepal.Length)) +  geom_bar(stat="identity", fill="#2596be", width=0.4)
+
+[![plot]("Rplot.png")]
 ```
 
   
