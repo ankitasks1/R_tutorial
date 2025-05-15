@@ -92,8 +92,12 @@ round(2.9010, 2)
 ```
 summary(df)
 ```
+### Select
+```
+which()
+```
+
 length(df)
-hist() #histogram
 q() #quit n close R session			
 rm(list = ls())#remove all files in listed directory
 list.files()
@@ -107,26 +111,31 @@ colnames(df)
 rownames(df)
 class(df)
 duplicated(df$col)
-which()
-## Basic stattistic function
-max()
-min()
-mean()
-median()
-sd()
-lm()
 
-#For Plotting
+### Basic stattistic function
+```
+max(vec)
+min(vec)
+mean(vec)
+median(vec)
+sd(vec)
+```
+### For Plotting
+#### histogram
+hist(vec) 
+#### density distribution
 plot(density(df$col, na.rm=TRUE))				
 
 par(ask=TRUE) #One figure in frame
 par(mfrow=c(2,3)) # 6 figures in one frame 2 rows 3 columns
-plot()
-plot(density())
+
+#### boxplot
 boxplot()
-stripchart()
-qqnorm()
+
+#### barplot
 barplot()
+
+### Session info
 
 sessionInfo()
 
