@@ -54,9 +54,10 @@ library(data.table)
 dt <- fread("data.txt", header =T)
 ```
 
-### Listing environment
+### Listing environment and files
 ```
 ls()
+list.files()
 ```
 
 ### Remove an object
@@ -104,7 +105,7 @@ length(df$column)
 dim(df)
 ```
 
-list.files()
+
 .libPaths()		# library pathname
 .Library	# library pathname
 ncol(df)
