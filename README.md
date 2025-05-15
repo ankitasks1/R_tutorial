@@ -230,7 +230,7 @@ barplot()
 ```
 ggplot(data=iris, aes(x=Species, y=Sepal.Length)) +  geom_bar(stat="identity", fill="#2596be", width=0.4)
 
-[![plot]("https://github.com/ankitasks1/R_tutorial/blob/main/Rplot.png")]
+![plot](https://raw.githubusercontent.com/ankitasks1/R_tutorial/main/Rplot.png)
 ```
 
   
