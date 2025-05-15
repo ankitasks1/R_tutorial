@@ -1,4 +1,66 @@
 #  R_tutorial
+## Some Theory
+
+## Object types in R
+
+#### String (Character Vector) – Text data
+```
+my_string <- "Hello, R!"  # character vector of length 1
+```
+
+##### Vector – Basic 1D structure (same type)
+```
+my_vector <- c(1, 2, 3, 4)  # numeric vector
+```
+
+#### List – Collection of elements (can be different types)
+```
+my_list <- list(name = "Alice", age = 30, scores = c(85, 90))  # mixed types
+```
+
+#### Data Frame – Table-like structure (columns can be different types)
+```
+my_df <- data.frame(name = c("Alice", "Bob"), age = c(30, 25))  # like a spreadsheet
+```
+
+#### Matrix – 2D structure (all elements must be same type)
+```
+my_matrix <- matrix(1:6, nrow = 2, ncol = 3)  # numeric matrix
+```
+
+#### Array – Multi-dimensional structure
+```
+my_array <- array(1:8, dim = c(2, 2, 2))  # 3D numeric array
+```
+
+#### Factor – Categorical variable (used for groupings, labels)
+```
+my_factor <- factor(c("yes", "no", "yes", "no"))  # stores "levels"
+```
+
+#### Tibble – Modern data frame (from tidyverse)
+```
+library(tibble)
+my_tibble <- tibble(name = c("Alice", "Bob"), score = c(90, 85))  # tidy format
+```
+
+#### Functions
+```
+my_function <- function(x) {
+  return(x + 1)
+}
+my_function(4)  # returns 5
+```
+
+### Basic Data Types
+```
+numeric - (10.5, 55, 787)
+integer - (1L, 55L, 100L, where the letter "L" declares this as an integer)
+complex - (9 + 3i, where "i" is the imaginary part)
+character (a.k.a. string) - ("k", "R is exciting", "FALSE", "11.5")
+logical (a.k.a. boolean) - (TRUE or FALSE)
+```
+
 
 ### Setting directory where you want to work
 ```
@@ -163,6 +225,13 @@ boxplot()
 ```
 barplot()
 ```
+
+#### plotting with ggplot2
+```
+ggplot(data=iris, aes(x=Species, y=Sepal.Length)) +  geom_bar(stat="identity", fill="#2596be", width=0.4)
+```
+
+  
 ### Session info
 ```
 sessionInfo()
