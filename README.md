@@ -13,7 +13,7 @@ dt <- read.csv("data.csv", header=T)
 
 or
 
-<code>
+```
 library(data.table)
 dt <- fread("data.txt", header =T)
-</code>
+```
