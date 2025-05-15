@@ -191,12 +191,18 @@ rownames(df)
 ```
 
 ### type of data
+```
 class(df)
+```
+
 
 ### get duplicates
+```
 duplicated(df$col)
+```
 
-### Basic stattistic function
+
+### Basic statistic function
 ```
 max(vec)
 min(vec)
