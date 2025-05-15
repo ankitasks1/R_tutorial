@@ -4,7 +4,7 @@
 <code>
 vec <- c(3,5,7,9)
 </code>
-  
+
 ## Reading file
 <code>
 dt <- read.table("data.txt", header =T)
