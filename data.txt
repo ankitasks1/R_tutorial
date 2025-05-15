@@ -1,0 +1,6 @@
+A	B	C
+1	newton	ramanjuan.1
+0	bhabha	newton.2
+1	einstein	francis_3
+1	watson	Kary%2
+0	mendel	James.2
