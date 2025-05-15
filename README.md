@@ -5,4 +5,5 @@
 vec <- c(3,5,7,9)
 
 ## Reading file
-read.table
+read.table()
+read.csv
