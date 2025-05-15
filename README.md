@@ -1,17 +1,17 @@
 #  R_tutorial
 
-## Setting directory where you want to work
+### Setting directory where you want to work
 ```
 setwd("directory")
 eg.
 setwd("/Archive2/home/")
 ```
-## Getting directory where you are working
+### Getting directory where you are working
 ```
 getwd()
 ```
 
-## Install packages
+### Install packages
 ##### CRAN
 ```
 install.packages("package")
@@ -35,13 +35,13 @@ library(package)
 help(package=package)
 ```
 
-## Input
-### Assignment
+### Getting Inputs
+#### Assignment
 ```
 vec <- c(3,5,7,9)
 ```
 
-## Reading file
+### Reading file
 ```
 dt <- read.table("data.txt", header =T) 
 dt <- read.csv("data.csv", header=T)
@@ -54,12 +54,12 @@ library(data.table)
 dt <- fread("data.txt", header =T)
 ```
 
-## Listing environment
+### Listing environment
 ```
 ls()
 ```
 
-## Remove an object
+### Remove an object
 ```
 rm(df)
 ```
@@ -92,14 +92,18 @@ round(2.9010, 2)
 ```
 summary(df)
 ```
-### Select
+
+### Select specific row
 ```
 which()
 ```
 
-length(df)
-q() #quit n close R session			
-rm(list = ls())#remove all files in listed directory
+### lenghth and dimensions 
+```
+length(df$column)
+dim(df)
+```
+
 list.files()
 .libPaths()		# library pathname
 .Library	# library pathname
