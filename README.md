@@ -6,6 +6,10 @@ setwd("directory")
 eg.
 setwd("/Archive2/home/")
 ```
+## getting directory where you are working
+```
+getwd()
+```
 
 ## Input
 ### Assignment
@@ -31,8 +35,9 @@ dt <- fread("data.txt", header =T)
 ls()
 ```
 
+## remove a object
 rm()
-getwd()
+
 utils::read.table()
 utils::read.csv()		
 plot(density(df$col, na.rm=TRUE))				
