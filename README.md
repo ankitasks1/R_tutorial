@@ -211,6 +211,35 @@ mean(vec)
 median(vec)
 sd(vec)
 ```
+
+#####apply 
+eg.
+apply(mtcars, 2, mean) # mean across column
+apply(mtcars, 1, mean) # mean across rows
+
+
+##### lapply returns a list of the same length as X, each element of which is the result of applying FUN to the corresponding element of X.
+```
+lapply(mtcars, 1, function(x) x * x) # will apply same function across all the columns and return a list
+```
+
+##### sapply same as lapply just retirn vector instea of list
+```
+sapply(mtcars, function(x) x * x) # will apply same function across all the columns
+```
+
+##### vapply
+```
+vapply(mtcars, mean, numeric(1))
+```
+
+##### tapply
+```
+ages <- c(21, 23, 25, 22, 24, 26)
+group <- c("A", "A", "B", "B", "C", "C")
+tapply(ages, group, mean)
+```
+
 ### For Plotting
 #### histogram
 ```
