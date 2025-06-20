@@ -225,7 +225,7 @@ lapply(mtcars, 1, function(x) x * x) # will apply same function across all the c
 
 ##### sapply same as lapply just retirn vector instea of list
 ```
-sapply(mtcars, function(x) x * x) # will apply same function across all the columns
+sapply(mtcars, function(x) x * x) # will apply same function across all the columns and return a vector
 ```
 
 ##### vapply
