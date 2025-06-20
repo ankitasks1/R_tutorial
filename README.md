@@ -212,11 +212,11 @@ median(vec)
 sd(vec)
 ```
 
-#####apply 
-eg.
+##### apply 
+```
 apply(mtcars, 2, mean) # mean across column
 apply(mtcars, 1, mean) # mean across rows
-
+```
 
 ##### lapply returns a list of the same length as X, each element of which is the result of applying FUN to the corresponding element of X.
 ```
